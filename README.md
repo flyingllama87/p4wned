@@ -12,6 +12,8 @@ Please read the above for complete details.
 
 **27/04/2026 update:** With the Perforce 2026.1 release (currently slated for around mid May 2026) about to ship secure defaults to affected customers, the Python audit tools and the (uncontributed) Metasploit modules have been temporarily pulled from the repository until that release is out. The Nuclei templates remain available, as they were already merged upstream into [projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates/pull/15992) and a vulnerability scanner serves blue teams auditing their own environments rather than reducing security posture.
 
+Note: These tools scan for the the misconfiguration resulting from [CVE-2026-6043](https://nvd.nist.gov/vuln/detail/CVE-2026-6043).
+
 ---
 
 ## Requirements
