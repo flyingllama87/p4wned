@@ -37,7 +37,7 @@ Perforce is committed to securing their product & their customers. They've patch
 - 29 May 2025 - Perforce published article on [hardening P4 instances](https://www.perforce.com/blog/vcs/p4-server-security).
 - December 2025 - Contacted vendor for CVE assignment.
 - April 2026 - This article released.
-- 27/04/2026 update: Perforce assigned [CVE-2026-6043](https://www.cve.org/CVERecord?id=CVE-2026-6043) covering the insecure default settings. The upcoming Perforce 2026.1 release (currently slated for around 14 May 2026) will be "secure-by-default" for new installs and will force the `security` configurable to a minimum of 4 for existing customers running below that level. The author appreciates Perforce's continued commitment to rectifying these defaults. They have been good to work with throughout the process.
+- 27 April 2026 - Perforce assigned [CVE-2026-6043](https://www.cve.org/CVERecord?id=CVE-2026-6043) covering the insecure default settings. The upcoming Perforce 2026.1 release (currently slated for around mid May 2026) will be "secure-by-default" for new installs and will force the `security` configurable to a minimum of 4 for existing customers running below that level. The author appreciates Perforce's continued commitment to rectifying these defaults. They have been good to work with throughout the process.
 
 
 ## ToC  
@@ -360,7 +360,7 @@ The "remote" user doesn't appear in user listings which would at least bring awa
   
 Furthermore, the [security chapter in the Perforce documentation](https://help.perforce.com/helix-core/server-apps/p4sag/2024.2/Content/P4SAG/chapter.security.html) "recommends" a value of 3 or 4 for the purpose of requiring "ticket-based authentication" with no mention of the default built-in "remote" user. A security level of "3" is unsafe.  
 
-27/04/2026 update: Perforce have updated their documentation to explicitly recommend a minimum `security` value of 4. The text above refers to the older guidance that recommended 3 or 4. 
+Update Note 27 April 2026: Perforce have updated their documentation to explicitly recommend a minimum `security` value of 4. The text above refers to the older guidance that recommended 3 or 4. 
   
 Statistically, a security level of "3" is the most common configuration for a Perforce host that is exposed on the internet. See the stats section for more.  
   
@@ -988,7 +988,7 @@ Whilst they aren't responsible for the security defaults of Perforce, if they ar
   
 Update Note December 2025: Perforce are now redirecting this link to the latest P4 Documentation.
 
-27/04/2026 update: To clarify, the original link in the Epic documentation has not been changed by Epic. Perforce have implemented a redirect on their end so the path now resolves to the latest P4 Server Administrator's Guide, which is a good approach.
+Update Note 27 April 2026: To clarify, the original link in the Epic documentation has not been changed by Epic. Perforce have implemented a redirect on their end so the path now resolves to the latest P4 Server Administrator's Guide, which is a good approach.
 
 ## 9. Tools & Methods  {#tools}  
 
@@ -1008,7 +1008,7 @@ Unfortunately, this may result in an increase in opportunistic, malicious scanni
 
 All tools are being released alongside this article. The vendor was contacted over a year ago, a patch has been available since May 2025, and responsible disclosures were sent to 60+ affected organisations. At this point, anyone still running insecure defaults has had more than enough time to act.
 
-27/04/2026 update: With the Perforce 2026.1 release (currently slated for around 14 May 2026) about to ship secure defaults to affected customers, the Python audit tools and the (uncontributed) Metasploit modules have been temporarily pulled from the repository until that release is out. The Nuclei templates remain available, as they were already merged upstream into [projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates/pull/15992) and a vulnerability scanner serves blue teams auditing their own environments rather than reducing security posture.
+Update Note 27 April 2026: With the Perforce 2026.1 release (currently slated for around 14 May 2026) about to ship secure defaults to affected customers, the Python audit tools and the (uncontributed) Metasploit modules have been temporarily pulled from the repository until that release is out. The Nuclei templates remain available, as they were already merged upstream into [projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates/pull/15992) and a vulnerability scanner serves blue teams auditing their own environments rather than reducing security posture.
 
 The following tools are available at [https://github.com/flyingllama87/p4wned](https://github.com/flyingllama87/p4wned):
 
