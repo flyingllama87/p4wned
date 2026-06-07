@@ -1,4 +1,4 @@
-# P4WNED
+# P4WNED (CVE-2026-6043)
 
 Perforce (Helix Core) security research tools and nuclei templates.
 
@@ -10,9 +10,9 @@ Please read the above for complete details.
 
 **Intended audience:** Perforce server administrators, penetration testers, security engineers
 
-**27/04/2026 update:** With the Perforce 2026.1 release (currently slated for around mid May 2026) about to ship secure defaults to affected customers, the Python audit tools and the (uncontributed) Metasploit modules have been temporarily pulled from the repository until that release is out. The Nuclei templates remain available, as they were already merged upstream into [projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates/pull/15992) and a vulnerability scanner serves blue teams auditing their own environments rather than reducing security posture.
+**May 2026 Update:** Perforce 2026.1 has been released. This version ships with secure defaults! Very pleased to see this released to protect developer IP. [Read more here](https://help.perforce.com/helix-core/server-apps/cmdref/current/Content/CmdRef/whats-new-2026-1.html).
 
-Note: These tools scan for the the misconfiguration resulting from [CVE-2026-6043](https://nvd.nist.gov/vuln/detail/CVE-2026-6043).
+Note: These tools scan for the misconfigurations resulting from [CVE-2026-6043](https://nvd.nist.gov/vuln/detail/CVE-2026-6043).
 
 ---
 
